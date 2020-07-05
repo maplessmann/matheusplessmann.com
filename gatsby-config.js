@@ -49,13 +49,13 @@ const gatsbyPluginGoogleAnalytics = {
 const gatsbyPluginManifest = {
   resolve: `gatsby-plugin-manifest`,
   options: {
-    name: `Gatsby Starter Blog`,
-    short_name: `GatsbyJS`,
+    name: `Matheus Plessmann Blog`,
+    short_name: `Matheus Plessmann`,
     start_url: `/`,
     background_color: `#ffffff`,
-    theme_color: `#663399`,
+    theme_color: `#5E53D5`,
     display: `minimal-ui`,
-    icon: `content/assets/gatsby-icon.png`,
+    icon: `content/assets/matheus-plessmann-logo.png`,
   },
 }
 
@@ -81,12 +81,13 @@ module.exports = {
     title: `Matheus Plessmann`,
     author: {
       name: `Matheus Plessmann`,
-      summary: `a front-end developer who loves to learn and share knowledge.`,
+      summary: `um desenvolvedor front-end que ama aprender e compartilhar conhecimento.`,
     },
     description: `My personal blog.`,
     siteUrl: `https://matheusplessmann.netlify.app/`,
     social: {
       twitter: `maplessmann`,
+      github: `maplessmann`,
     },
   },
   plugins: [
