@@ -1,3 +1,5 @@
+const path = require('path')
+
 const gatsbySourceFilesystemBlog = {
   resolve: `gatsby-source-filesystem`,
   options: {
@@ -64,6 +66,16 @@ const gatsbyPluginTypography = {
   },
 }
 
+const gatsbyPluginAliasImports = {
+  resolve: `gatsby-plugin-alias-imports`,
+  options: {
+    alias: {
+      "@components": path.resolve(__dirname, 'src/components')
+    },
+    extensions: []
+  }
+}
+
 module.exports = {
   siteMetadata: {
     title: `Matheus Plessmann`,
@@ -84,11 +96,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     gatsbyPluginGoogleAnalytics,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-feed`,
     gatsbyPluginManifest,
     `gatsby-plugin-react-helmet`,
     gatsbyPluginTypography,
-    `gatsby-plugin-provide-react`
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-provide-react`,
+    gatsbyPluginAliasImports,
   ],
 }
