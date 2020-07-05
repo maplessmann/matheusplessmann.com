@@ -87,6 +87,7 @@ module.exports = {
     siteUrl: `https://matheusplessmann.netlify.app/`,
     social: {
       twitter: `maplessmann`,
+      github: `maplessmann`,
     },
   },
   plugins: [
