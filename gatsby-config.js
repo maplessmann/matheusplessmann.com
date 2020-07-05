@@ -49,13 +49,13 @@ const gatsbyPluginGoogleAnalytics = {
 const gatsbyPluginManifest = {
   resolve: `gatsby-plugin-manifest`,
   options: {
-    name: `Gatsby Starter Blog`,
-    short_name: `GatsbyJS`,
+    name: `Matheus Plessmann Blog`,
+    short_name: `Matheus Plessmann`,
     start_url: `/`,
     background_color: `#ffffff`,
-    theme_color: `#663399`,
+    theme_color: `#5E53D5`,
     display: `minimal-ui`,
-    icon: `content/assets/gatsby-icon.png`,
+    icon: `content/assets/matheus-plessmann-logo.png`,
   },
 }
 
