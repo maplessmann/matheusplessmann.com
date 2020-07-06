@@ -1,6 +1,6 @@
 const Layout = ({ children }) => {
   return (
-    <main className="app">
+    <main className="app container">
       {children}
     </main>
   )
