@@ -66,6 +66,15 @@ const gatsbyPluginTypography = {
   },
 }
 
+const gatsbyPluginSass = {
+  resolve: `gatsby-plugin-sass`,
+  options: {
+    data: `
+      @import "${__dirname}/src/styles/index";
+    `,
+  },
+}
+
 const gatsbyPluginAliasImports = {
   resolve: `gatsby-plugin-alias-imports`,
   options: {
@@ -102,7 +111,7 @@ module.exports = {
     gatsbyPluginManifest,
     `gatsby-plugin-react-helmet`,
     gatsbyPluginTypography,
-    `gatsby-plugin-sass`,
+    gatsbyPluginSass,
     `gatsby-plugin-provide-react`,
     gatsbyPluginAliasImports,
   ],
