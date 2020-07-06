@@ -1,12 +1,14 @@
 import useBio from './hooks'
 
-import Img from 'gatsby-image'
+import Img from '@components/Img'
+
+import './Bio.scss'
 
 const Bio = () => {
   const { imageData, author, social } = useBio()
 
   return (
-    <div className="bio">
+    <div className="author-bio">
       <Img fixed={imageData} alt={author.name} />
       <p className="summary">
         <a
