@@ -7,7 +7,7 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <Img fixed={imageData} alt="Matheus Plessmann" />
+      <Img fixed={imageData} alt={author.name} />
       <p className="summary">
         <a
           href={`http://github.com/${social.github}`}
