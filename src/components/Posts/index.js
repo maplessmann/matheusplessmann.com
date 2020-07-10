@@ -8,21 +8,19 @@ const Posts = ({ posts }) => {
 
     return (
       <article className="post-summary" key={node.fields.slug}>
-        <header className="header">
-          <h2 className="title">
-            <Link className="link" to={node.fields.slug}>
-              {title}
-            </Link>
-          </h2>
-          <small>{node.frontmatter.date}</small>
-        </header>
-        <section>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: node.frontmatter.description || node.excerpt,
-            }}
-          />
-        </section>
+        <Link className="link" to={node.fields.slug}>
+          <header className="header">
+            <h2 className="title">{title}</h2>
+            <small>{node.frontmatter.date}</small>
+          </header>
+          <section>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: node.frontmatter.description || node.excerpt,
+              }}
+            />
+          </section>
+        </Link>
       </article>
     )
   })

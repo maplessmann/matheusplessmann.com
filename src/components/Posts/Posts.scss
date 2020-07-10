@@ -1,18 +1,33 @@
 .post-summary {
-  margin-top: 2rem;
-  padding: 1.5rem;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
 
-  > .header {
-    > .title {
-      margin-top: 0;
-      font-size: 1.5rem;
+  > .link {
+    display: block;
+    padding: 1.5rem;
+    color: $app-color;
+    box-shadow: none;
 
-      > .link {
-        box-shadow: none;
-        color: $app-color;
+    > .header {
+      > .title {
+        margin-top: 0;
+        font-size: 1.5rem;
+
+        > .link {
+          box-shadow: none;
+          color: $app-color;
+        }
       }
+    }
+  }
+
+  & + .post-summary {
+    margin-top: 2.5rem;
+  }
+
+  &:hover {
+    > .link > .header > .title {
+      text-decoration: underline;
     }
   }
 }
