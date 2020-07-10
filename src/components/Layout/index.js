@@ -1,6 +1,8 @@
+import './Layout.scss'
+
 const Layout = ({ children }) => {
   return (
-    <main className="app container">
+    <main className="app">
       {children}
     </main>
   )

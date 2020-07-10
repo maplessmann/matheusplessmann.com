@@ -1,14 +1,18 @@
 import { Link } from 'gatsby'
 
+import './Posts.scss'
+
 const Posts = ({ posts }) => {
   return posts.map(({ node }) => {
     const title = node.frontmatter.title || node.fields.slug
 
     return (
-      <article key={node.fields.slug}>
-        <header>
-          <h2>
-            <Link to={node.fields.slug}>{title}</Link>
+      <article className="post-summary" key={node.fields.slug}>
+        <header className="header">
+          <h2 className="title">
+            <Link className="link" to={node.fields.slug}>
+              {title}
+            </Link>
           </h2>
           <small>{node.frontmatter.date}</small>
         </header>
