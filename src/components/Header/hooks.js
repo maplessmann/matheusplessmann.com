@@ -5,7 +5,7 @@ const useHeader = () => {
     query {
       image: file(absolutePath: { regex: "/avatar.png/" }) {
         childImageSharp {
-          fixed(width: 56, quality: 100) {
+          fixed(width: 56, quality: 50) {
             ...GatsbyImageSharpFixed
           }
         }
