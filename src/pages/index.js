@@ -2,19 +2,14 @@ import { graphql } from 'gatsby'
 
 import Layout from "@components/Layout"
 import SEO from "@components/Seo"
-import Header from '@components/Header'
-import Bio from '@components/Bio'
 import Posts from '@components/Posts'
 
 const Home = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout>
       <SEO title="Home" />
-      <Header title={siteTitle} />
-      <Bio />
       <Posts posts={posts} />
     </Layout>
   )

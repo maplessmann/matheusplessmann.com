@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 const useBio = () => {
   const data = useStaticQuery(graphql`
     query {
-      profileImage: file(absolutePath: { regex: "/profile-photo.png/" }) {
+      profileImage: file(absolutePath: { regex: "/avatar.png/" }) {
         childImageSharp {
           fixed(width: 56, quality: 56) {
             ...GatsbyImageSharpFixed

@@ -1,10 +1,13 @@
+import Header from '@components/Header'
+
 import './Layout.scss'
 
 const Layout = ({ children }) => {
   return (
-    <main className="app">
-      {children}
-    </main>
+    <div className="app">
+      <Header />
+      <main>{children}</main>
+    </div>
   )
 }
 
