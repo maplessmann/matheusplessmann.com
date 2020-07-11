@@ -5,7 +5,7 @@ const useHeader = () => {
     query {
       image: file(absolutePath: { regex: "/avatar.png/" }) {
         childImageSharp {
-          fixed(width: 56, quality: 50) {
+          fixed(width: 48, quality: 50) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -13,6 +13,9 @@ const useHeader = () => {
       site {
         siteMetadata {
           title
+          social {
+            github
+          }
         }
       }
     }
@@ -21,6 +24,7 @@ const useHeader = () => {
   return {
     imageData: data.image.childImageSharp.fixed,
     appTitle: data.site.siteMetadata.title,
+    social: data.site.siteMetadata.social,
   }
 }
 
