@@ -1,11 +1,11 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-const useHeader = () => {
+const useAuthor = () => {
   const data = useStaticQuery(graphql`
     query {
       profileImage: file(absolutePath: { regex: "/avatar.png/" }) {
         childImageSharp {
-          fixed(width: 56, quality: 50) {
+          fixed(width: 64, quality: 50) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -16,9 +16,6 @@ const useHeader = () => {
             name
             summary
           }
-          social {
-            github
-          }
         }
       }
     }
@@ -27,8 +24,7 @@ const useHeader = () => {
   return {
     imageData: data.profileImage.childImageSharp.fixed,
     author: data.site.siteMetadata.author,
-    social: data.site.siteMetadata.social,
   }
 }
 
-export default useHeader
+export default useAuthor

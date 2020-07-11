@@ -92,7 +92,7 @@ module.exports = {
     title: `Matheus Plessmann`,
     author: {
       name: `Matheus Plessmann`,
-      summary: `um desenvolvedor front-end que ama aprender e compartilhar conhecimento.`,
+      summary: `Um desenvolvedor front-end que ama aprender e compartilhar conhecimento.`,
     },
     description: `My personal blog.`,
     siteUrl: `https://matheusplessmann.netlify.app/`,
