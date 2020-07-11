@@ -1,15 +1,13 @@
 .app {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-
   @include below(l) {
+    padding-top: $app-padding-top / 1.6;
+    padding-bottom: $app-padding-top / 1.6;
+
     @include container;
 
-    // ----- refactor -----
-    > .sidebar {
+    > .sidebar-menu {
       display: none;
     }
-    // --------------------
 
     .main-content {
       padding-top: 3rem;
@@ -17,21 +15,28 @@
   }
 
   @include above(l) {
-    display: flex;
-    padding-top: 4rem;
-
-    // ----- refactor -----
     > .app-header {
       display: none;
     }
-    // --------------------
 
-    > .sidebar {
-      flex-basis: 400px;
+    > .sidebar-menu {
+      max-width: $sidebar-width;
+      height: 100vh;
+      padding-top: $app-padding-top;
+      padding-bottom: $app-padding-bottom;
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-right: 1px solid rgba($app-color, 0.15);
     }
 
     > .main-content {
-      @include container(896px, 2rem);
+      padding-top: $app-padding-top;
+      padding-left: $sidebar-width;
+
+      > .wrapper {
+        @include container(896px, 2rem);
+      }
     }
   }
 }

@@ -7,8 +7,6 @@ import './Social.scss'
 const Social = () => {
   const { socialMedia } = useSocial()
 
-  console.log({ socialMedia })
-
   return (
     <div className="social-media">
       {socialMedia.map(({ name, link }, index) => (

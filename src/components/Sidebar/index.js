@@ -4,7 +4,7 @@ import './Sidebar.scss'
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar">
+    <aside className="sidebar-menu">
       <Author />
     </aside>
   )
