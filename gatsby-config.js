@@ -99,6 +99,7 @@ module.exports = {
     social: {
       twitter: `maplessmann`,
       github: `maplessmann`,
+      linkedin: `matheus-plessmann-329283a0`,
     },
   },
   plugins: [

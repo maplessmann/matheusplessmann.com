@@ -1,0 +1,9 @@
+.social-media {
+  > .link {
+    color: $app-color;
+
+    & + .link {
+      margin-left: 1rem;
+    }
+  }
+}
