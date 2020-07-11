@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "@components/Bio"
 import Layout from "@components/Layout"
 import SEO from "@components/Seo"
 import { rhythm, scale } from "../utils/typography"
@@ -42,9 +41,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <footer>
-          <Bio />
-        </footer>
       </article>
 
       <nav>

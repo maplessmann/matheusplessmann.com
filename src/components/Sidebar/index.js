@@ -1,11 +1,11 @@
-import Header from '@components/Header'
+import Author from '@components/Author'
 
 import './Sidebar.scss'
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <Header />
+      <Author />
     </aside>
   )
 }
