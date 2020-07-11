@@ -29,3 +29,11 @@
     }
   }
 }
+
+@mixin container($max-width: 800px, $padding: 1.25rem) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding;
+  padding-right: $padding;
+}

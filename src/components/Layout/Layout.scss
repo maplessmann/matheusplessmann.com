@@ -1,7 +1,37 @@
 .app {
-  @extend .container;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 
-  &-main {
-    padding-top: 3rem;
+  @include below(l) {
+    @include container;
+
+    // ----- refactor -----
+    > .sidebar {
+      display: none;
+    }
+    // --------------------
+
+    .main-content {
+      padding-top: 3rem;
+    }
+  }
+
+  @include above(l) {
+    display: flex;
+    padding-top: 4rem;
+
+    // ----- refactor -----
+    > .app-header {
+      display: none;
+    }
+    // --------------------
+
+    > .sidebar {
+      flex-basis: 400px;
+    }
+
+    > .main-content {
+      @include container(896px, 2rem);
+    }
   }
 }
