@@ -15,6 +15,7 @@ const Posts = ({ posts }) => {
           </header>
           <section>
             <p
+              className="description"
               dangerouslySetInnerHTML={{
                 __html: node.frontmatter.description || node.excerpt,
               }}
