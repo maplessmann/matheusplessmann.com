@@ -1,12 +1,11 @@
 .post-summary {
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.07);
-
   > .link {
     display: block;
     padding: 1.8rem 1.5rem;
     color: unset;
     text-decoration: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
 
     .title {
       margin-top: unset;
