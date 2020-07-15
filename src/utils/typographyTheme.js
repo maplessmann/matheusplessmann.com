@@ -1,7 +1,13 @@
 const theme = {
   baseFontSize: '16px',
   baseLineHeight: '24px',
-  headerFontFamily: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+  headerFontFamily: [
+    'Open Sans',
+    'Helvetica Neue',
+    'Helvetica',
+    'Arial',
+    'sans-serif',
+  ],
   bodyFontFamily: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
   modularScales: [
     {
@@ -14,7 +20,7 @@ const theme = {
   ],
   headerGray: 20,
   bodyGray: 20,
-  headerWeight: 600,
+  headerWeight: 700,
   bodyWeight: 'normal',
   boldWeight: 'bold',
 }
