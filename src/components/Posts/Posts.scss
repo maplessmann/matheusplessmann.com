@@ -1,12 +1,16 @@
 .post-summary {
   border-radius: 10px;
-  background-color: rgba($app-color, 0.1);
+  background-color: rgba($app-color, 0.08);
 
   > .link {
     display: block;
     padding: 1.8rem 1.5rem;
     color: $app-color;
     text-decoration: none;
+
+    .title {
+      margin-top: unset;
+    }
 
     .description {
       margin-bottom: unset;

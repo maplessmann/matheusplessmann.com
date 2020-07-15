@@ -30,8 +30,8 @@
   }
 }
 
-@mixin container($max-width: 800px, $padding: 1.25rem) {
-  max-width: $max-width;
+@mixin container($padding: 1.25rem) {
+  max-width: 52rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: $padding;

@@ -1,9 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Layout from "@components/Layout"
-import SEO from "@components/Seo"
-import { rhythm, scale } from "../utils/typography"
+import Layout from '@components/Layout'
+import SEO from '@components/Seo'
+
+import './BlogPost.scss'
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -15,30 +16,18 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
-        <header>
-          <h1
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
+      <article className="blog-post">
+        <header className="header">
+          <h1 className="title">{post.frontmatter.title}</h1>
+          <p className="date">{post.frontmatter.date}</p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          className="post"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: '1.5rem',
           }}
         />
       </article>

@@ -1,0 +1,28 @@
+.blog-post {
+  color: rgba($app-color, .85);
+
+  > .header {
+    padding-bottom: 1.75rem;
+
+    > .title {
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+      font-weight: 800;
+      color: $app-color;
+    }
+
+    > .date {
+      margin-bottom: 0;
+      font-size: 0.87rem;
+      line-height: 1.5rem;
+      color: $app-color;
+    }
+  }
+}
+
+.blog-post > .post {
+  blockquote {
+    border-color: rgba($app-color, 0.9);
+    color: rgba($app-color, 0.6);
+  }
+}

@@ -35,7 +35,7 @@
       padding-left: $sidebar-width;
 
       > .wrapper {
-        @include container(896px, 2rem);
+        @include container(2rem);
       }
     }
   }
