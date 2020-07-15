@@ -1,4 +1,9 @@
 .app {
+
+  > .main-content {
+    color: var(--contentText);
+  }
+
   @include below(l) {
     padding-top: $app-padding-top / 1.6;
     padding-bottom: $app-padding-top / 1.6;
@@ -27,7 +32,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      border-right: 1px solid rgba($app-color, 0.15);
+      border-right: 1px solid var(--divider);
     }
 
     > .main-content {

@@ -1,6 +1,6 @@
 .social-media {
   > .link {
-    color: $app-color;
+    color: var(--text);
 
     & + .link {
       margin-left: 1rem;

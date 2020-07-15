@@ -1,6 +1,7 @@
 body {
-  background-color: $app-background;
-  color: $app-color;
+  @include theme;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .container {

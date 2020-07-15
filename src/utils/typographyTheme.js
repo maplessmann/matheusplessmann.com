@@ -20,7 +20,7 @@ const theme = {
   ],
   headerGray: 20,
   bodyGray: 20,
-  headerWeight: 700,
+  headerWeight: 800,
   bodyWeight: 'normal',
   boldWeight: 'bold',
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
@@ -30,13 +30,18 @@ const theme = {
     'h2, h3, h4, h5, h6': {
       marginTop: '3.5rem',
     },
+    a: {
+      color: 'var(--primary)',
+    },
     blockquote: {
-      ...scale(1 / 5),
-      color: 'rgba(0,0,0,0.6)',
+      ...scale(1 / 4),
+      color: 'var(--textContent)',
       fontStyle: 'italic',
       paddingLeft: rhythm(13 / 16),
       marginLeft: rhythm(-1),
-      borderLeft: `${rhythm(3 / 16)} solid rgba(0,0,0,.9)`,
+      borderLeft: `${rhythm(3 / 16)} solid`,
+      borderColor: 'var(--textContent)',
+      opacity: 0.8,
     },
     'blockquote > :last-child': {
       marginBottom: 0,
