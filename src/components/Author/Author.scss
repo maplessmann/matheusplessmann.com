@@ -12,9 +12,10 @@
     }
 
     > .title {
-      font-size: 1.6rem;
       margin-top: 1.5rem;
       margin-bottom: unset;
+      font-size: 1.45rem;
+      line-height: 1.5;
       color: var(--text);
     }
   }
@@ -22,7 +23,7 @@
   > .summary {
     max-width: 408px;
     margin-top: 2.5rem;
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
     font-size: 1.1rem;
   }
 }
