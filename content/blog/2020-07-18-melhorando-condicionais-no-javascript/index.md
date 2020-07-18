@@ -1,6 +1,9 @@
 ---
 title: Melhorando condicionais no JavaScript
 date: '2020-07-18'
+description: 'Quando estamos escrevendo código, seja em JavaScript ou em outra linguagem, é
+muito comum nos depararmos com cenários onde precisamos criar condicionais desse
+modo...'
 ---
 
 Quando estamos escrevendo código, seja em JavaScript ou em outra linguagem, é
