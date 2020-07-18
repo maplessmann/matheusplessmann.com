@@ -10,15 +10,12 @@ pre[class*='language-'] {
   word-break: normal;
   word-wrap: normal;
   color: #eee;
-
-  font-family: 'Operator Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono',
-    'Ubuntu Mono', monospace;
+  font-family: Menlo, Monaco, source-code-pro, Consolas, 'Courier New', monospace;
   font-weight: 400;
   font-size: 0.85rem;
   line-height: 25px;
   letter-spacing: 0.5px;
   text-shadow: 0 1px #222245;
-  background: #1e1e3f;
   background: #1d1d3e;
 
   -moz-tab-size: 2;
