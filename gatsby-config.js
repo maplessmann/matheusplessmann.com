@@ -23,7 +23,7 @@ const gatsbyTransformerRemark = {
       {
         resolve: `gatsby-remark-images`,
         options: {
-          maxWidth: 590,
+          maxWidth: 768,
         },
       },
       {
@@ -91,6 +91,7 @@ const gatsbyPluginAliasImports = {
 module.exports = {
   siteMetadata: {
     title: `Matheus Plessmann`,
+    summary: `Aqui eu abordo assuntos que envolvem JavaScript e o ecossistema em torno da linguagem`,
     author: {
       name: `Matheus Plessmann`,
       summary: `Um desenvolvedor front-end que ama aprender e compartilhar conhecimento.`,
