@@ -2,7 +2,7 @@ import useHeader from './hooks'
 
 import Link from '@components/Link'
 import Img from '@components/Img'
-import GithubIcon from './GithubIcon'
+import Icon from '@components/Icon'
 
 import './Header.scss'
 
@@ -16,7 +16,7 @@ const Header = () => {
         <h1 className="title">{appTitle}</h1>
       </Link>
       <Link external to={`http://github.com/${social.github}`}>
-        <GithubIcon />
+        <Icon id="github" />
       </Link>
     </header>
   )

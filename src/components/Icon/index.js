@@ -1,3 +1,5 @@
+import './Icon.scss'
+
 const Icon = ({ id, ...props }) => {
   return (
     <svg className={`icon ${id}`} aria-hidden {...props}>

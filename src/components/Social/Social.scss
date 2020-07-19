@@ -1,9 +1,36 @@
 .social-media {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   > .link {
+    display: inline-flex;
     color: var(--text);
+    transition: filter 0.15s ease-in;
+    will-change: filter;
+
+    > .icon {
+      width: 24px;
+      height: 24px;
+      transition: fill 0.15s ease-in;
+    }
 
     & + .link {
-      margin-left: 1rem;
+      margin-left: 2rem;
+    }
+
+    &:hover > .icon {
+      fill: var(--primary);
+    }
+  }
+
+  &:hover {
+    > .link {
+      filter: blur(1.8px);
+
+      &:hover {
+        filter: none;
+      }
     }
   }
 }

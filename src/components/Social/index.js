@@ -1,6 +1,7 @@
 import useSocial from './hooks'
 
 import Link from '@components/Link'
+import Icon from '@components/Icon'
 
 import './Social.scss'
 
@@ -9,9 +10,9 @@ const Social = () => {
 
   return (
     <div className="social-media">
-      {socialMedia.map(({ name, link }, index) => (
-        <Link external to={link} key={index}>
-          {name}
+      {socialMedia.map(({ id, name, link }, index) => (
+        <Link external to={link} title={name} key={index}>
+          <Icon id={id} />
         </Link>
       ))}
     </div>

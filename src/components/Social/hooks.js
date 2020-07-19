@@ -17,10 +17,12 @@ const useSocial = () => {
   return {
     socialMedia: [
       {
+        id: 'github',
         name: 'GitHub',
         link: `https://github.com/${data.site.siteMetadata.social.github}`,
       },
       {
+        id: 'linkedin',
         name: 'Linkedin',
         link: `https://www.linkedin.com/in/${data.site.siteMetadata.social.linkedin}`,
       },
