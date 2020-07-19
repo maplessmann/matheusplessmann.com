@@ -15,7 +15,7 @@ const Header = () => {
         <Img fixed={imageData} alt={appTitle} />
         <h1 className="title">{appTitle}</h1>
       </Link>
-      <Link external to={`http://github.com/${social.github}`}>
+      <Link external to={`http://github.com/${social.github}`} title="GitHub">
         <Icon id="github" />
       </Link>
     </header>
