@@ -1,4 +1,8 @@
 // custom typefaces
 import 'typeface-open-sans'
 
-import "prismjs/themes/prism.css"
+// Prismjs css
+import 'prismjs/themes/prism.css'
+
+// Scripts to run on page load
+import '@utils/bootstrap'
