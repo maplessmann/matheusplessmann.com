@@ -42,7 +42,8 @@ const gatsbyTransformerRemark = {
 const gatsbyPluginGoogleAnalytics = {
   resolve: `gatsby-plugin-google-analytics`,
   options: {
-    //trackingId: `ADD YOUR TRACKING ID HERE`,
+    trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    head: false,
   },
 }
 
