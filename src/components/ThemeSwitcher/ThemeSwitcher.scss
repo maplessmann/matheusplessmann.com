@@ -33,5 +33,24 @@
     will-change: transform;
     border-radius: 50%;
     background-color: #efefef;
+    z-index: 1;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+  }
+
+  &::before {
+    content: '🌙';
+    left: 2px;
+    transform: scale(0.7);
+  }
+
+  &::after {
+    content: '☀️';
+    right: 2px;
+    transform: scale(0.8);
   }
 }

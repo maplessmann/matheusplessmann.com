@@ -1,4 +1,15 @@
 .app {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+
+  &.-light {
+    @include light-theme;
+  }
+
+  &.-dark {
+    @include dark-theme;
+  }
 
   > .main-content {
     color: var(--contentText);
@@ -38,6 +49,7 @@
     > .main-content {
       padding-top: $app-padding-top;
       padding-left: $sidebar-width;
+      padding-bottom: $app-padding-bottom;
 
       > .wrapper {
         @include container(2rem);

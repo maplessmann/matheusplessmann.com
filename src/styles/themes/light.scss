@@ -1,0 +1,8 @@
+@mixin light-theme {
+  -webkit-font-smoothing: antialiased;
+  --primary: #6a78ff;
+  --background: #fff;
+  --text: #070913;
+  --contentText: #070913;
+  --divider: rgba(43, 43, 43, 0.15);
+}

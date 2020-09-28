@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react'
 const AppContext = createContext()
 
 const initialState = {
-  theme: 'light',
+  theme: 'dark',
 }
 
 const ContextProvider = ({ children }) => {

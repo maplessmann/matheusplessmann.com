@@ -4,15 +4,17 @@ import useTheme from '@hooks/theme'
 import './ThemeSwitcher.scss'
 
 const ThemeSwitcher = () => {
-  const { onThemeSwitch, isActive } = useTheme()
+  const { onThemeSwitch, isSwitcherActive } = useTheme()
 
   return (
     <div className="theme-switcher">
       <button
-        className={classNames('switcher-button', { '-active': isActive })}
+        className={classNames('switcher-button', {
+          '-active': isSwitcherActive,
+        })}
         role="switch"
         title="Toggle dark theme"
-        aria-checked={isActive}
+        aria-checked={isSwitcherActive}
         onClick={onThemeSwitch}
       >
         <div className="switcher"></div>

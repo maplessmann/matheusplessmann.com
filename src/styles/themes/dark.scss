@@ -1,0 +1,8 @@
+@mixin dark-theme {
+  -webkit-font-smoothing: antialiased;
+  --primary: #6a78ff;
+  --background: #070913;
+  --text: #fff;
+  --contentText: #d6d6d6;
+  --divider: rgba(255, 255, 255, 0.1);
+}

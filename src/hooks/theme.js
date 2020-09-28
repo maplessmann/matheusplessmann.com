@@ -1,15 +1,20 @@
-import { useState } from 'react'
+import { useAppContext } from '@context'
+
+const themes = ['dark', 'light']
+const oppositeTheme = (current) => (theme) => theme !== current
+const getOppositeTheme = (current) => themes.find(oppositeTheme(current))
 
 const useTheme = () => {
-  const [isActive, setIsActive] = useState()
+  const { context, updateContext } = useAppContext()
+  const { theme } = context
 
   const onThemeSwitch = () => {
-    setIsActive(!isActive)
+    updateContext({ theme: getOppositeTheme(theme) })
   }
 
   return {
     onThemeSwitch,
-    isActive,
+    isSwitcherActive: theme === themes[1],
   }
 }
 

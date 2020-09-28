@@ -1,9 +1,3 @@
-body {
-  @include theme;
-  background-color: var(--background);
-  color: var(--text);
-}
-
 .container {
   max-width: 800px;
   margin-left: auto;
