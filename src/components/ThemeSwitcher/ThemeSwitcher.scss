@@ -1,0 +1,37 @@
+.switcher-button {
+  width: 48px;
+  height: 24px;
+  padding: 0;
+  border-radius: 1rem;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #1f2446;
+  position: relative;
+  outline: 0;
+
+  &:focus,
+  &:active {
+    > .switcher {
+      box-shadow: 0 0 4px 4px var(--primary);
+    }
+  }
+
+  &.-active > .switcher {
+    transform: translate3d(24px, -50%, 0);
+  }
+
+  > .switcher {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    transform: translate3d(0, -50%, 0);
+    transition: transform 0.2s ease;
+    will-change: transform;
+    border-radius: 50%;
+    background-color: #efefef;
+  }
+}
