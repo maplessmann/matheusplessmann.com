@@ -85,6 +85,7 @@ const gatsbyPluginAliasImports = {
       '@hooks': path.resolve(__dirname, 'src/hooks'),
       '@utils': path.resolve(__dirname, 'src/utils'),
       '@static': path.resolve(__dirname, 'static'),
+      '@context': path.resolve(__dirname, 'src/context'),
     },
     extensions: [],
   },
