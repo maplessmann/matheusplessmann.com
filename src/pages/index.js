@@ -1,6 +1,5 @@
 import { graphql } from 'gatsby'
 
-import Layout from "@components/Layout"
 import SEO from "@components/Seo"
 import Posts from '@components/Posts'
 
@@ -8,10 +7,10 @@ const Home = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
       <Posts posts={posts} />
-    </Layout>
+    </>
   )
 }
 

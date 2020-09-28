@@ -121,5 +121,6 @@ module.exports = {
     gatsbyPluginSass,
     `gatsby-plugin-provide-react`,
     gatsbyPluginAliasImports,
+    `gatsby-plugin-layout`,
   ],
 }

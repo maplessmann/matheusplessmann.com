@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '@components/Layout'
 import SEO from '@components/Seo'
 
 import './BlogPost.scss'
@@ -11,7 +10,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout>
+    <>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -58,7 +57,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           </li>
         </ul>
       </nav>
-    </Layout>
+    </>
   )
 }
 
