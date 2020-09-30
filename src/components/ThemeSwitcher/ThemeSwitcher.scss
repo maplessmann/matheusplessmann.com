@@ -7,14 +7,14 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background-color: #1f2446;
+  background-color: #23284a;
   position: relative;
   outline: 0;
 
   &:focus,
   &:active {
     > .switcher {
-      box-shadow: 0 0 4px 4px var(--primary);
+      box-shadow: 0 0 3px 3px var(--primary);
     }
   }
 
@@ -43,14 +43,14 @@
   }
 
   &::before {
-    content: '🌙';
-    left: 2px;
-    transform: scale(0.7);
+    content: '☀️';
+    left: 3px;
+    transform: scale(0.8);
   }
 
   &::after {
-    content: '☀️';
-    right: 2px;
-    transform: scale(0.8);
+    content: '🌙';
+    right: 3px;
+    transform: scale(0.7);
   }
 }
