@@ -97,7 +97,7 @@ module.exports = {
     summary: `Aqui eu abordo assuntos que envolvem JavaScript e o ecossistema em torno da linguagem`,
     author: {
       name: `Matheus Plessmann`,
-      summary: `Um desenvolvedor front-end que ama aprender e compartilhar conhecimento.`,
+      summary: `A Front-End developer who loves to create things with JavaScript and the ecosystem around it.`,
     },
     description: `My personal blog.`,
     siteUrl: `https://matheusplessmann.netlify.app/`,
