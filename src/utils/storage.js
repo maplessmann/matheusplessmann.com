@@ -16,8 +16,19 @@ const safeLocalStorage = (method) => (...args) => {
   }
 }
 
+const getItem = key => {
+  const value = safeLocalStorage('getItem')(key)
+  return JSON.parse(value)
+}
+
+const setItem = (key, value) => {
+  safeLocalStorage('setItem')(key, JSON.stringify(value))
+}
+
+const removeItem = safeLocalStorage('removeItem')
+
 export default {
-  getItem: safeLocalStorage('getItem'),
-  setItem: safeLocalStorage('setItem'),
-  removeItem: safeLocalStorage('removeItem'),
+  getItem,
+  setItem,
+  removeItem,
 }
