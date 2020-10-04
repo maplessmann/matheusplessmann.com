@@ -16,9 +16,9 @@ const safeLocalStorage = (method) => (...args) => {
   }
 }
 
-const getItem = key => {
+const getItem = (key) => {
   const value = safeLocalStorage('getItem')(key)
-  return JSON.parse(value)
+  return value ? JSON.parse(value) : null
 }
 
 const setItem = (key, value) => {
