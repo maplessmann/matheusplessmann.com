@@ -1,9 +1,17 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState, useEffect } from 'react'
+import storage from '@utils/storage'
 
 const AppContext = createContext()
 
+const savedContext = storage.getItem('context')
+
 const initialState = {
   theme: 'dark',
+  ...savedContext,
+}
+
+if (!savedContext) {
+  storage.setItem('context', initialState)
 }
 
 const ContextProvider = ({ children }) => {
@@ -12,6 +20,10 @@ const ContextProvider = ({ children }) => {
   const updateContext = (state) => {
     setContext({ ...context, ...state })
   }
+
+  useEffect(() => {
+    storage.setItem('context', context)
+  }, [context])
 
   return (
     <AppContext.Provider value={{ context, updateContext }}>
