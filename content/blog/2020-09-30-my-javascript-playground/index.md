@@ -30,7 +30,7 @@ The boilerplate is very small and comes with these cool features:
 - ✨ Prettier for code formatting
 
 You can find the boilerplate at
-[github.com/maplessmann/js-playground-boilerplate](https://github.com/maplessmann/js-playground-boilerplate).
+[github.com/maplessmann/js-playground](https://github.com/maplessmann/js-playground).
 
 Also, feel free to contribute!
 
